@@ -5,7 +5,7 @@ const cors = require("cors");
 
 router
     .route('/')
-    .get(cors(), controller.fetch)
+    .get(controller.fetch)
     .all(methodNotAllowed)
 
 router
@@ -17,7 +17,7 @@ router
   .route('/:movieId/reviews')
   .get(controller.readReviews)
   .all(methodNotAllowed)
-git a
+
 router
     .route('/:movieId')
     .get(controller.read)
